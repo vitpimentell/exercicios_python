@@ -8,7 +8,7 @@ salario = float(input('Qual é o seu salário? '))
 anos_pagamento = int(input('Em quantos anos você quer pagar a casa? '))
 parcela_mensal = anos_pagamento * 12
 prestacao = valor_casa / parcela_mensal
-emprestimo_aceito = salario * 0.3 + salario
+emprestimo_aceito = salario * 0.3 
 if prestacao <= emprestimo_aceito:
     print('A prestação mensal da sua casa será de {:.2f}'.format(prestacao))
 elif prestacao > emprestimo_aceito:
