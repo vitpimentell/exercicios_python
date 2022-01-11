@@ -11,5 +11,5 @@ prestacao = valor_casa / parcela_mensal
 emprestimo_aceito = salario * 0.3 
 if prestacao <= emprestimo_aceito:
     print('A prestação mensal da sua casa será de {:.2f}'.format(prestacao))
-elif prestacao > emprestimo_aceito:
+else:
     print('Infelizmente, você não pode financiar essa casa')
