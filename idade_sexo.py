@@ -4,9 +4,10 @@ A) quantas pessoas tem mais de 18 anos
 B) quantos homens foram cadastrados
 C) quantas mulheres com menos de 20 anos foram cadastradas'''
 
-soma = cont_idade = cont_homens = cont_mulheres = 0
+soma = cont_idade = cont_homens = cont_mulheres = cont_total = 0
 while True:
     i = int(input('Idade: '))
+    cont_total += 1
     if i >= 18:
         cont_idade += 1
     s = str(input('Sexo [F/M]: ')).upper().strip()
@@ -21,4 +22,5 @@ while True:
         p = str(input('Quer continuar? [S/N] ')).upper().strip()
     if p == 'N':
         break
-print(f'Fim do programa. Foram cadastradas {cont_idade} pessoas. Destas, {cont_homens} eram homens e {cont_mulheres} eram mulheres com menos de 20 anos')
+print(f'Fim do programa. Foram cadastradas {cont_total} pessoas. Destas, {cont_idade} eram maiores de 18 anos, {cont_homens} eram homens e {cont_mulheres} eram mulheres com menos de 20 anos')
+
